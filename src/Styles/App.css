@@ -1,0 +1,10 @@
+body{
+    background-color:	#1e2124;
+    font-family: var(--fonts_2);
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    max-width: 100%;
+ }
+
+

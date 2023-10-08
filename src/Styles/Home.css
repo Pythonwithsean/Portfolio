@@ -1,0 +1,277 @@
+:root {
+    --fonts_1: 'Supreme', sans-serif;
+    --fonts_2: 'General Sans', sans-serif;
+ }
+ 
+ 
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ header {
+    background-color:	#1e2124;
+    max-width: 100%;
+    height: 100px;
+ 
+ 
+ }
+
+ 
+ 
+ h1 {
+    font-family: var(--fonts_2);
+    transition: 0.5s;
+    position: relative;
+    color: #fff;
+    display: inline;
+    margin-left:10px;
+ }
+ 
+ header em, em{
+    color:rgb(41, 41, 249);
+    font-size: 1.4em;
+ }
+ 
+ nav {
+    width: 100%;
+    height: 50px;
+ 
+ }
+ 
+ nav ul {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    text-align: right;
+ }
+ 
+ 
+ nav ul li {
+    list-style: none;
+    padding: 10px;
+ }
+ 
+ nav ul li a {
+    font-family: var(--fonts_2);
+    font-size: .8rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    z-index: 500px;
+    margin-right: 15px;
+    padding:10px;
+    
+ 
+ }
+ nav ul li a:hover{
+    color: #1e2124;
+    background-color: rgb(129, 137, 153);
+ }
+ 
+ 
+ nav ul li a::after{
+    content: "";
+    width:0%;
+    height:3px;
+    position: absolute;
+    left:0;
+    top:50px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+ }
+ 
+ nav ul li a:hover::after,nav ul li a:active::after,nav ul li a:focus:after{
+    width:100%;
+ 
+ }
+ 
+ .container{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+ }
+ 
+ .hero-container,.subhero {
+    width: 50%;
+    height: 900px;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ 
+ /* .hero-container::after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+ }*/
+ 
+ .subhero img {
+    max-width: 300px;
+    height: 400px;
+    transition: 0.5s;
+    position: relative;
+    border: 2px solid black;
+    background-image: none; 
+    position: relative;
+    background-blend-mode: multiply;
+    box-shadow: 12px 12px 6px 6px black;
+    border: 2px solid black;
+    border-radius: 5px;
+ 
+ }
+ 
+ .hero-container button{
+    background-color:rgb(41, 41, 249);
+    border: none;
+    width:180px;
+    height:43px;
+    margin-top:20px;
+    color:white;
+    font-size: 1rem;
+    border-radius: 2px;
+    box-shadow: 12px 12px 6px 6px black;
+    border: 2px solid black;
+    transition: 0.4s;
+    cursor: pointer;
+ }
+ 
+ .hero-container button:hover{
+    transform: translateY(-10px);
+    background-color: #1e2124;
+ }
+ 
+ .info_container h2{
+    font-size: 2.5rem;
+    font-family: var(--fonts_2);
+    color:white;
+    text-align:left;
+    text-align: left;
+ }
+ 
+ .info_container h3{
+    color:white;
+    text-align:left;
+    font-size:1.1rem;
+    font-family: var(--fonts_2);
+    text-align: center;
+ }
+ 
+ footer{
+    background-color: #15171a;
+    height:40px;
+    width:100%;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+ }
+ 
+ 
+ .blob-1,.blob-2,.blob-3,.blob-4,.blob-5,.blob-6,.blob-7,.blob-8{
+    opacity: 0.2;
+    position: absolute;
+    z-index: -1;
+ }
+ 
+ .blob-1{
+    left:-1px;
+    top:300px;
+ }
+ 
+ 
+ .blob-2{
+    left:400px;
+    top:-50px;
+    opacity:0.5;
+ 
+ }
+ 
+ 
+ .blob-4{
+    left:850px;
+    top:500px
+ }
+ 
+ .blob-6{
+    left:-200px;
+    top:300px;
+ }
+ 
+ 
+ .info_container{
+    width:max-content;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    top:-60px;
+    left:0;
+    transition: 0.4ms;
+    animation-name: Slideinright;
+    animation-duration: 3s;
+ }
+ 
+ @keyframes Slideinright{
+    0%{
+       left:-500px
+    }
+ 
+    100%{
+       left:0;
+    }
+ }
+ 
+   /* Tablets */
+ 
+   @media only screen and (max-width:900px) {
+      header h1 {
+         font-size: 1.3rem;
+      }
+   
+      .container{
+         flex-direction: column-reverse;
+         width:100%;
+      }
+   
+   }
+   
+   /* Mobile Devices */
+   
+   @media only screen and (max-width:600px){
+      header h1{
+         opacity: 0;
+      }
+   
+      .container{
+         flex-direction: column-reverse;
+         width:100%;
+      }
+   
+   
+   }
+   
+   /* Pc */
+   @media only screen and (min-width:1024px) {
+      .subhero img {
+         margin: 100px 250px;
+         max-width: 550px;
+         height: 500px;
+      }
+   }
+ 
+ 
