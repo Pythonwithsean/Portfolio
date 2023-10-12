@@ -1,10 +1,11 @@
 import Header from "../Components/Header";
+import AboutMain from "../Components/AboutMain";
 
 function About() {
   return (
     <>
       <Header />
-      <h2>About page</h2>
+      <AboutMain />
     </>
   );
 }
