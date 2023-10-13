@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The CSS code you provided is styling the `body` element of a webpage. */
 body{
     background-color:	#1e2124;
     font-family: var(--fonts_2);
