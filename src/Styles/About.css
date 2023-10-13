@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 
+.tech-stack-logo {
+    transition: transform 1s ease-in-out; 
+}
+
+.tech-stack-logo:hover {
+    transform: scale(1.2) translateY(-10px);
+    transition: transform 0.1s ease-in-out;  
+}
+

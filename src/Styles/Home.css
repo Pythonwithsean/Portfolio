@@ -75,12 +75,14 @@
     z-index: 500px;
     margin-right: 15px;
     padding:10px;
+    transition: all 0.2s ease-in;
     
  
  }
  nav ul li a:hover{
     color: #1e2124;
     background-color: rgb(129, 137, 153);
+    font-size: 0.9rem;
  }
  
  
@@ -99,6 +101,8 @@
     width:100%;
  
  }
+
+
  
  .container{
     width:100%;

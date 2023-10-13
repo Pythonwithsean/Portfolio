@@ -1,6 +1,6 @@
 import Header from "../Components/Header";
 
-const Services = () => {
+const Projects = () => {
   return (
     <>
       <Header />
@@ -8,4 +8,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Projects;

@@ -5,7 +5,7 @@ function Hero() {
         <div className="hero-container">
           <div className="info_container">
             <h2>
-              Hi, Im <em>Sean.</em>
+              Hi, I&apos;m <em>Sean.</em>
             </h2>
             <h3>I am a Front-End Developer</h3>
             <a href="https://github.com/DenverCoder1/readme-typing-svg">
