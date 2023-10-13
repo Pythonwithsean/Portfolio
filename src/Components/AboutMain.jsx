@@ -3,7 +3,7 @@ import { Component, MonitorDot, Store } from "lucide-react";
 
 function AboutMain() {
   const services = ["Web Development", "Web Design", "Digital Marketing"];
-  const icons = ["MonitorDot", "Component", "Store"];
+
   return (
     <div>
       <p className=" text-white p-5 text-sm text-justify">
@@ -132,7 +132,13 @@ function AboutMain() {
                 key={i}
                 className=" w-500 h-280 text-white  font-semibold border-white border border-solid text-left "
               >
-                <MonitorDot size={80} color="#b13535" strokeWidth={1.25} />
+                {i === 0 ? (
+                  <MonitorDot size={90} color="#b13535" strokeWidth={1.25} />
+                ) : i === 1 ? (
+                  <Component size={90} color="#b13535" strokeWidth={1.25} />
+                ) : (
+                  <Store size={90} color="#b13535" strokeWidth={1.25} />
+                )}
                 <div className="p-1 opacity-70">{service}</div>
                 <p className="  text-xs  font-light italic p-1">
                   {services[i] == "Web Development" ? (
