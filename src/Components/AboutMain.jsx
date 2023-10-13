@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Component, MonitorDot, Store } from "lucide-react";
 
 function AboutMain() {
+  const services = ["Web Development", "Web Design", "Digital Marketing"];
+  const icons = ["MonitorDot", "Component", "Store"];
   return (
     <div>
       <p className=" text-white p-5 text-sm text-justify">
@@ -124,15 +127,29 @@ function AboutMain() {
             className="flex justify-between align-middle
            pt-4 gap-4"
           >
-            <div className=" w-500 h-500 border-white border border-solid ">
-              Web Development
-            </div>
-            <div className=" w-500 h-500 border-white border border-solid ">
-              Web Design
-            </div>
-            <div className=" w-500 h-500  border-white border border-solid ">
-              Digital Marketing
-            </div>
+            {services.map((service, i) => (
+              <div
+                key={i}
+                className=" w-500 h-280 text-white  font-semibold border-white border border-solid text-left "
+              >
+                <MonitorDot size={80} color="#b13535" strokeWidth={1.25} />
+                <div className="p-1 opacity-70">{service}</div>
+                <p className="  text-xs  font-light italic p-1">
+                  {services[i] == "Web Development" ? (
+                    <p>
+                      I Design, Develop and Build Web Applications using the
+                      Tech stack above{" "}
+                    </p>
+                  ) : services[i] == "Web Design" ? (
+                    <p> I Design Websites </p>
+                  ) : services[i] == "Digital Marketing" ? (
+                    <p>I perform Digital Marketing </p>
+                  ) : (
+                    <p> Does not </p>
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
