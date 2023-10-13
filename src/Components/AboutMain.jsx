@@ -120,6 +120,20 @@ function AboutMain() {
           <h2 className="font-bold w-full  mt-9 mb-0 ml-auto mr-auto text-center text-lg text-white">
             My services
           </h2>
+          <div
+            className="flex justify-between align-middle
+           pt-4 gap-4"
+          >
+            <div className=" w-500 h-500 border-white border border-solid ">
+              Web Development
+            </div>
+            <div className=" w-500 h-500 border-white border border-solid ">
+              Web Design
+            </div>
+            <div className=" w-500 h-500  border-white border border-solid ">
+              Digital Marketing
+            </div>
+          </div>
         </div>
       </div>
     </div>

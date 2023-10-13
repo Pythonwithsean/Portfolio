@@ -13,10 +13,8 @@
 
 
 
- body{
-   overflow: hidden;
- }
- 
+
+
  header {
     background-color:	#1e2124;
     max-width: 100%;
@@ -24,6 +22,11 @@
     z-index: 999;
  
  
+ }
+
+ body{
+   overflow: visible;  
+     
  }
 
  
@@ -39,7 +42,7 @@
  
  header em, em{
     color:rgb(41, 41, 249);
-    font-size: 1.4em;
+    font-size: 1.3em;
  }
  
  nav {
@@ -99,7 +102,7 @@
  
  .container{
     width:100%;
-    height:100%;
+    height:800px;
     display:flex;
     flex-direction: row;
     margin: 10px auto;

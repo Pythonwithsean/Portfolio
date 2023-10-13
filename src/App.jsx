@@ -9,9 +9,9 @@ function App() {
     <Router>
       <Routes>
         {/* Default route (often the root route) */}
-        <Route index element={<Home />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
+        <Route index element={<Home className=" overflow-hidden" />} />
+        <Route path="/" element={<Home className=" overflow-hidden" />} />
+        <Route path="/Home" element={<Home className=" overflow-hidden" />} />
         <Route path="/About" element={<About />} />
         <Route path="/Services" element={<Services />} />
       </Routes>
