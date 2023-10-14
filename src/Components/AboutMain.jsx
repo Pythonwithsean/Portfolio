@@ -8,7 +8,7 @@ function AboutMain() {
     <div>
       <p className=" text-white p-5 text-sm text-justify font-light">
         I'm a <strong>self-taught</strong> software developer with experience in
-        JavaScript, Python, HTML, and CSS. I'm highly motivated and
+        JavaScript, Python, HTML, and CSS and React. I'm highly motivated and
         detail-oriented, knowledgeable about creating dynamic user interfaces,
         writing maintainable code, and developing responsive web and mobile
         applications. I have strong analytical and problem-solving abilities and
@@ -162,7 +162,7 @@ function AboutMain() {
             {services.map((service, i) => (
               <div
                 key={i}
-                className=" w-500 h-280 text-white  font-semibold border-white border border-solid text-left "
+                className=" w-500 h-280 text-white  font-semibold  border border-blue-500 border-solid text-left "
               >
                 {i === 0 ? (
                   <MonitorDot size={90} color="#38bdf8" strokeWidth={1.25} />
