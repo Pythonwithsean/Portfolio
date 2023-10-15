@@ -18,7 +18,7 @@ function Hero() {
           <div className="links-container"></div>
         </div>
         <div className="subhero">
-          <img src="../public/Sean3.jpg" alt="Pythonwithsean" />
+          <img src="/src/assets/Sean3.jpg" alt="Pythonwithsean" />
         </div>
       </div>
     </>

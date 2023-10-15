@@ -6,7 +6,7 @@ function AboutMain() {
 
   return (
     <div>
-      <p className=" text-white p-5 text-sm text-justify font-light">
+      <p className=" text-white p-8 text-lg text-justify font-light">
         I'm a <strong>self-taught</strong> software developer with experience in
         JavaScript, Python, HTML, and CSS and React. I'm highly motivated and
         detail-oriented, knowledgeable about creating dynamic user interfaces,
@@ -162,7 +162,7 @@ function AboutMain() {
             {services.map((service, i) => (
               <div
                 key={i}
-                className=" w-500 h-280 text-white  font-semibold  border border-blue-500 border-solid text-left "
+                className=" w-500 h-280 text-white  font-semibold  border border-blue-500 border-solid text-left rounded-lg p-1 flex flex-col align-middle"
               >
                 {i === 0 ? (
                   <MonitorDot size={90} color="#38bdf8" strokeWidth={1.25} />
@@ -174,22 +174,24 @@ function AboutMain() {
                 <div className="p-1 opacity-70">{service}</div>
                 <p className="  text-xs  font-light italic p-1">
                   {services[i] == "Web Development" ? (
-                    <p>
+                    <p className=" px-1">
                       I Design, Develop and Build Web Applications using the
                       Tech stack above{" "}
                     </p>
                   ) : services[i] == "Web Design" ? (
-                    <p> I Design Websites </p>
+                    <p className=" px-1"> I specialize in crafting stunning and visually pleasing websites through the art of Figma. My passion lies in creating aesthetically pleasing web designs that not only captivate but also engage users.</p>
                   ) : services[i] == "Digital Marketing" ? (
-                    <p>I perform Digital Marketing </p>
+                    <p className=" px-1">I perform Digital Marketing by promoting businesses services and manage social media account aswell as recommend content ideas to promote the service or product of the business</p>
                   ) : (
                     <p> Does not </p>
                   )}
+                
                 </p>
               </div>
             ))}
           </div>
         </div>
+        <br />
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ function About() {
   return (
     <>
       <Header />
-      <div className="flex flex-col  w-1200 ml-auto mr-auto mt-6 ">
+      <div className="flex flex-col  w-1200 ml-auto mr-auto mt-4 ">
         <h2 className=" font-bold w-full  mt-5 mb-0 ml-auto mr-auto text-center text-lg text-white">
           About Me
         </h2>
