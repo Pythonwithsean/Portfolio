@@ -1,0 +1,48 @@
+.Projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, .5fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-self:center;
+
+
+
+
+}
+
+.Projects-container .card{
+    background-color: white;
+    height: 500px;
+    width:700px;
+    border: 4px solid black;
+    box-shadow: 2px 5px 1px 3px black;
+    padding:5px;
+    min-width: 300px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.Projects-container .card a button{
+    text-decoration: none;
+    color: black;
+    background-color: black;
+    color: white;
+    width: 150px;
+    padding:2px;
+    margin-top: 20px;
+    height:30px
+}
+
+@media only screen and (max-width: 1100px) {
+    .Projects-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+  
+}

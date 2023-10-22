@@ -1,35 +1,34 @@
 import Header from "../Components/Header";
 import projectsData from "./Data/ProjectsData";
+import "../Styles/Projects.css"
 
 const Projects = () => {
   return (
     <>
       <Header />
-      <div className="container flex " >
+      <div className="Projects-container">
         {projectsData.map((project) => {
-          return(
-            <div className="card  w-500 border border-white h-500 mt-10" key={project.id} >
-              <div className="card-header">
-                <h2 className="card-title">{project.title}</h2>
-                <h3 className="card-subtitle">{project.subtitle}</h3>
+          return (
+            <div className="card  " key={project.id}>
+              <div className="card-header  text-black">
+                <h2 className="card-title  text-black">{project.name}</h2>
+                <h3 className="card-subtitle  text-black">{project.language}</h3>
               </div>
-              <div className="card-body">
-                <img src={project.image} alt={project.title} />
-                <p className="card-text">{project.description}</p>
-                <div className="card-footer">
-                  <a href={project.github} target="_blank" rel="noreferrer">
-                    <button className="btn btn-primary">Github</button>
+              <br />
+              <div className="card-body color-white" key={project.id}>
+                <img src={project.image} alt={project.name} />
+                <p className="card-tex color-white p-3 text-white">{project.description}</p>
+                <div className="card-footer  text-white">
+                  <a href={project.link} target="_blank" rel="noreferrer">
+                    <button className="btn btn-primary  text-white">Link</button>
                   </a>
-                  <a href={project.live} target="_blank" rel="noreferrer">
-                    <button className="btn btn-primary">Live</button>
-                  </a>
+                  {/* You need to define a 'project.live' property in your data if you want to use it */}
                 </div>
               </div>
-            </div>    
-          )
+            </div>
+          );
         })}
       </div>
-   
     </>
   );
 };
