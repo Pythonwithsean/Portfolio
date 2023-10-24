@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Component, MonitorDot, Store } from "lucide-react";
+import "../Styles/About.css";
 
 function AboutMain() {
   const services = ["Web Development", "Web Design", "Digital Marketing"];
 
   return (
     <div>
-      <p className=" text-white p-8 text-lg text-justify font-light">
+      <p className=" text-white p-8 text-lg text-justify font-light section">
         I'm a <strong>self-taught</strong> software developer with experience in
         JavaScript, Python, HTML, and CSS and React. I'm highly motivated and
         detail-oriented, knowledgeable about creating dynamic user interfaces,
@@ -15,12 +16,12 @@ function AboutMain() {
         work well both individually and in a team.
       </p>
 
-      <div className=" text-center flex flex-col">
+      <div className=" text-center flex flex-col section">
         <h2 className="font-bold w-full  mt-1 mb-0 ml-auto mr-auto text-center text-lg text-white">
           Tech Stack
         </h2>
         <br />
-        <div className="w-full flex align-middle justify-center gap-3 p-1">
+        <div className="w-full flex align-middle justify-center gap-3 p-1 section">
           <img
             align="left"
             alt="Java"
@@ -151,7 +152,7 @@ function AboutMain() {
 
           <br />
         </div>
-        <div className="">
+        <div className="section">
           <h2 className="font-bold w-full  mt-9 mb-0 ml-auto mr-auto text-center text-lg text-white">
             My services
           </h2>
