@@ -162,14 +162,14 @@ function AboutMain() {
             {services.map((service, i) => (
               <div
                 key={i}
-                className=" w-500 h-280 text-white  font-semibold  border border-blue-500 border-solid text-left rounded-lg p-1 flex flex-col align-middle"
+                className=" w-500 h-280 text-white  font-semibold  border border-green-400 border-solid text-left rounded-lg p-1 flex flex-col align-middle"
               >
                 {i === 0 ? (
-                  <MonitorDot size={90} color="#38bdf8" strokeWidth={1.25} />
+                  <MonitorDot size={90} color="#4ed9ac" strokeWidth={1.25} />
                 ) : i === 1 ? (
-                  <Component size={90} color="#38bdf8" strokeWidth={1.25} />
+                  <Component size={90} color="#4ed9ac" strokeWidth={1.25} />
                 ) : (
-                  <Store size={90} color="#38bdf8" strokeWidth={1.25} />
+                  <Store size={90} color="#4ed9ac" strokeWidth={1.25} />
                 )}
                 <div className="p-1 opacity-70">{service}</div>
                 <p className="  text-xs  font-light italic p-1">

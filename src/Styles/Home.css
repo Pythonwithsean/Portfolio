@@ -32,17 +32,19 @@
  
  
  h1 {
-    font-family: var(--fonts_2);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 0.5s;
     position: relative;
     color: #fff;
     display: inline;
     margin-left:10px;
+    font-weight: 800;
  }
  
  header em, em{
-    color:rgb(41, 41, 249);
+    color:rgb(78, 217, 172);
     font-size: 1.3em;
+
  }
  
  nav {
@@ -69,7 +71,7 @@
     font-family: var(--fonts_2);
     font-size: .8rem;
     text-decoration: none;
-    color: #fff;
+    color:rgb(78, 217, 172);
     font-weight: 600;
     position: relative;
     z-index: 500px;
@@ -148,7 +150,7 @@
  }
  
  .hero-container button{
-    background-color:rgb(41, 41, 249);
+    background-color:rgb(78, 217, 172);
     border: none;
     width:200px;
     height:50px;
@@ -160,6 +162,7 @@
     border: 2px solid black;
     transition: 0.4s;
     cursor: pointer;
+    font-weight: 800;
  }
  
  .hero-container button:hover{
@@ -172,15 +175,16 @@
     font-family: var(--fonts_2);
     color:white;
     text-align:left;
-    text-align: left;
+
  }
  
  .info_container h3{
     color:white;
     text-align:left;
-    font-size:1.1rem;
+    font-size:1.2rem;
     font-family: var(--fonts_2);
     text-align: center;
+    font-weight: 800;
  }
  
  footer{
@@ -194,36 +198,6 @@
     font-weight: 600;
  }
  
- 
- .blob-1,.blob-2,.blob-3,.blob-4,.blob-5,.blob-6,.blob-7,.blob-8{
-    opacity: 0.2;
-    position: absolute;
-    z-index: -1;
- }
- 
- .blob-1{
-    left:-1px;
-    top:300px;
- }
- 
- 
- .blob-2{
-    left:400px;
-    top:-50px;
-    opacity:0.5;
- 
- }
- 
- 
- .blob-4{
-    left:850px;
-    top:500px
- }
- 
- .blob-6{
-    left:-200px;
-    top:300px;
- }
  
  
  .info_container{
