@@ -6,22 +6,32 @@ function AboutMain() {
   const services = ["Web Development", "Web Design", "Digital Marketing"];
 
   return (
-    <div>
-      <p className=" text-white p-8 text-lg text-justify font-light section">
-        I'm a <strong>self-taught</strong> software developer with experience in
-        JavaScript, Python, HTML, and CSS and React. I'm highly motivated and
-        detail-oriented, knowledgeable about creating dynamic user interfaces,
-        writing maintainable code, and developing responsive web and mobile
-        applications. I have strong analytical and problem-solving abilities and
-        work well both individually and in a team.
+    <div >
+      <p className="section paragraph">
+      As a <strong>self-taught</strong> software developer, I've acquired extensive expertise in a range of essential technologies and have a strong focus on creating dynamic, user-centric interfaces, writing clean and maintainable code, and crafting responsive web and mobile applications. My commitment to detail and passion for problem-solving drives my work and my contributions to both individual and team-based projects.
+
+Key Skills:
+
+JavaScript: I have a deep understanding of JavaScript, which is the backbone of modern web development. I can build complex interactive features, manipulate the Document Object Model (DOM), and use JavaScript frameworks like React to create efficient and performant user interfaces.
+
+Python: I'm well-versed in Python, an extremely versatile language. I can use it for web development, data analysis, automation, and more, making me adaptable to a wide range of projects and industries.
+
+Front-End Technologies: My proficiency in HTML and CSS allows me to structure and style web content effectively. I have experience in responsive web design, ensuring a seamless user experience across various devices and screen sizes.
+
+React: React is one of my core strengths. I've developed single-page applications and interactive components, utilizing React's component-based architecture to create modular and maintainable code.
+
+Analytical Skills: My strong analytical skills empower me to tackle complex problems efficiently. I can break down complex issues into manageable tasks and find innovative solutions.
+
+Collaboration: I thrive both as an individual contributor and in collaborative team environments. I understand the importance of effective communication, version control, and agile development methodologies.
+        
       </p>
 
-      <div className=" text-center flex flex-col section">
-        <h2 className="font-bold w-full  mt-1 mb-0 ml-auto mr-auto text-center text-lg text-white">
+      <div>
+        <h2 className="heading">
           Tech Stack
         </h2>
         <br />
-        <div className="w-full flex align-middle justify-center gap-3 p-1 section">
+        <div className="Tech-Stack-Container">
           <img
             align="left"
             alt="Java"
@@ -153,17 +163,16 @@ function AboutMain() {
           <br />
         </div>
         <div className="section">
-          <h2 className="font-bold w-full  mt-9 mb-0 ml-auto mr-auto text-center text-lg text-white">
+          <h2 className="heading">
             My services
           </h2>
           <div
-            className="flex justify-between align-middle
-           pt-4 gap-4"
+            className="services-container"
           >
             {services.map((service, i) => (
               <div
                 key={i}
-                className=" w-500 h-280 text-white  font-semibold  border border-green-400 border-solid text-left rounded-lg p-1 flex flex-col align-middle"
+                className="service-card"
               >
                 {i === 0 ? (
                   <MonitorDot size={90} color="#4ed9ac" strokeWidth={1.25} />
@@ -172,17 +181,17 @@ function AboutMain() {
                 ) : (
                   <Store size={90} color="#4ed9ac" strokeWidth={1.25} />
                 )}
-                <div className="p-1 opacity-70">{service}</div>
-                <p className="  text-xs  font-light italic p-1">
+                <div className="heading">{service}</div>
+                <p className="">
                   {services[i] == "Web Development" ? (
-                    <p className=" px-1">
+                    <p className="">
                       I Design, Develop and Build Web Applications using the
                       Tech stack above{" "}
                     </p>
                   ) : services[i] == "Web Design" ? (
-                    <p className=" px-1"> I specialize in crafting stunning and visually pleasing websites through the art of Figma. My passion lies in creating aesthetically pleasing web designs that not only captivate but also engage users.</p>
+                    <p className=""> I specialize in crafting stunning and visually pleasing websites through the art of Figma. My passion lies in creating aesthetically pleasing web designs that not only captivate but also engage users.</p>
                   ) : services[i] == "Digital Marketing" ? (
-                    <p className=" px-1">I perform Digital Marketing by promoting businesses services and manage social media account aswell as recommend content ideas to promote the service or product of the business</p>
+                    <p className="">I perform Digital Marketing by promoting businesses services and manage social media account aswell as recommend content ideas to promote the service or product of the business</p>
                   ) : (
                     <p> Does not </p>
                   )}

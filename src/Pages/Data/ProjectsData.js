@@ -3,14 +3,14 @@ const projectsData = [
     id: 1,
     name: "Hallmark Healthcare Services | hhcs.uk",
     language: "ReactJS, NodeJS, ExpressJS, MongoDB",
-    link: "hhcs.uk",
+    link: "https://hhcs.uk/",
     image: "../Capture.PNG",
   },
   {
     id: 2,
     name: "Codershub Uk | codershub.uk",
     language: "HTML, CSS, JavaScript",
-    link: "codershub.uk",
+    link: "https://codershub.uk/",
     image: "../Coderhubuk.png",
   },
   {
