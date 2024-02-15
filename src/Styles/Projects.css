@@ -1,88 +1,80 @@
-.Projects-container{
-    display: grid;
-    grid-template-columns: repeat(2, .5fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
-    align-self:center;
-    padding: 20px;
-
-
-
+.Projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-
-
-.heading{
-    margin-top: 10px;
-    color:aqua;
-    font-size: 1.4rem;
-    text-align: center;
+.heading {
+  margin-top: 20px;
+  color: aqua;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
-.languages{
-    color: white;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 10px;
+.languages {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
 }
 
-
-div .section{
-    color: white;
-    position: relative;
-    margin: 30px auto;
-    position: relative;
-    font-style:italic;
-    padding: 8px;
-    text-align: center;
-
+.section {
+  color: white;
+  font-style: italic;
+  padding: 8px;
+  text-align: center;
 }
 
-.Projects-container .card{
-    background-color: #081d40;
-    height: 500px;
-    width:450px;
-    border-radius: 10px;
-    padding:15px;
-    min-width: 300px;
-    text-align: center;
-    font-weight: 600;
-    line-height: 1.5;
-    word-wrap: break-word;
-
+.card {
+  background-color: #081d40;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5;
+  min-width: 300px;
+  transition: transform 0.4s;
+  position: relative;
 }
 
-.Projects-container .card a button{
-    background-color:rgb(78, 217, 172);
-    border: none;
-    width:200px;
-    height:40px;
-    margin-top:20px;
-    color:white;
-    font-size: 1rem;
-    border-radius: 2px;
-    box-shadow: 12px 12px 6px 6px black;
-    
-    transition: 0.4s;
-    cursor: pointer;
-    font-weight: 800;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.card a button:hover{
-    transform: translateY(-10px);
-    background-color: #1e2124;
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px 16px;
+  border-radius: 5px;
+  display: none;
 }
 
+.card:hover .card-content {
+  display: block;
+}
 
+.card a button {
+  background-color: #4ed9ac;
+  border: none;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 2px;
+  box-shadow: 12px 12px 6px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s;
+  cursor: pointer;
+  font-weight: 800;
+}
 
-@media only screen and (max-width: 1100px) {
-    .Projects-container {
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        align-items: center;
-    }
-  
+.card a button:hover {
+  background-color: #1e2124;
 }
