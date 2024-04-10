@@ -137,14 +137,7 @@ Collaboration: I thrive both as an individual contributor and in collaborative t
             className="tech-stack-logo"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg"
           />
-          <img
-            align="left"
-            alt="Tailwind CSS"
-            width="30px"
-            className="tech-stack-logo"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-          />
-
+      
           <img
             align="left"
             alt="Tailwind CSS"
