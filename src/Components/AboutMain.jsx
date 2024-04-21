@@ -46,6 +46,10 @@ Collaboration: I thrive both as an individual contributor and in collaborative t
             className="tech-stack-logo"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
           />
+          <img align="left"
+            alt="TypeScript"
+            width="50px"
+            className="tech-stack-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" />
           <img
             align="left"
             alt="Git"

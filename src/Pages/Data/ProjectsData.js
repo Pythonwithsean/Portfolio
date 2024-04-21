@@ -51,6 +51,13 @@ const projectsData = [
     link: "https://github.com/Pythonwithsean/Loooffyy-Anime-Streaming-Website",
     image: "../Bellabeauty.png",
   },
+  {
+    id: 8,
+    name: "Fingertips Typing Test Application",
+    language: "Typescript | ReactJS | NodeJS | ExpressJS | MongoDB | Docker",
+    link: "https://fingertipstyping.onrender.com/",
+    image: "../fingertips.png",
+  }
 ];
 
 export default projectsData;
