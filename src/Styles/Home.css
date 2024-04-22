@@ -25,7 +25,7 @@
  }
 
  body{
-   overflow: visible;
+   overflow: hidden;
      
  }
 
@@ -44,8 +44,7 @@
     color:rgb(78, 217, 172);
     font-size: 1.5em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
- }
+}
  
  nav {
    max-width: 100%;
@@ -225,6 +224,8 @@
     animation-duration: 3s;
  }
 
+
+
  
  
  @keyframes Slideinright{
@@ -262,7 +263,7 @@
       .container{
 
          margin: 0 auto;
-         max-height: fit-content;
+         max-height: max-content;
       }
 
       div .hero-container{
@@ -285,6 +286,10 @@
          display: flex;
          justify-content: center;
          align-items: center;
+      }
+
+      .info_container img {
+         max-width: 300px;
       }
    
    
