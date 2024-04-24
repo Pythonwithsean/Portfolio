@@ -74,6 +74,7 @@ const projectsData = [
     language: "Java",
     link: "https://github.com/Pythonwithsean/Binary-Tree",
     image: " https://favtutor.com/resources/images/uploads/Binary_Search_Tree.png"
+  }
 
 ];
 
