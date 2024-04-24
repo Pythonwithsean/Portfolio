@@ -25,7 +25,8 @@
  }
 
  body{
-   overflow: hidden;
+   overflow-x: hidden;
+   overflow-y: visible;
      
  }
 
@@ -127,7 +128,7 @@
  }
 
  .hero-container{
-   height:500px;
+   height:530px;
    position: relative;
    display:flex;
    justify-content: center;
@@ -188,6 +189,23 @@
     color:white;
     text-align:left;
 
+ }
+
+
+ a{
+    text-decoration: none;
+    color: #fff;
+ }
+
+ .moving-text{
+      font-size: 2rem;
+      font-family: var(--fonts_2);
+      color:rgb(78, 217, 172);
+      text-align:left;
+      animation-name: moving;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
  }
  
  .info_container h3{
@@ -269,7 +287,7 @@
       div .hero-container{
          margin: 0 auto;
          min-height:200px;
-         overflow: hidden;
+         overflow-x: hidden;
       }
 
       .container .info_container{

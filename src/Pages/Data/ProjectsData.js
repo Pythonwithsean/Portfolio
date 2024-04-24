@@ -48,7 +48,7 @@ const projectsData = [
     name: "BellaBeauty | Mums Website",
     language:
       "ReactJS, Postgresql, Express, Typescript, Docker, HTML,CSS, Stripe",
-    link: "https://github.com/Pythonwithsean/Loooffyy-Anime-Streaming-Website",
+    link: "https://github.com/Pythonwithsean/Bellabeauty",
     image: "../Bellabeauty.png",
   },
   {
@@ -57,7 +57,17 @@ const projectsData = [
     language: "Typescript | ReactJS | NodeJS | ExpressJS | MongoDB | Docker",
     link: "https://fingertipstyping.onrender.com/",
     image: "../fingertips.png",
-  }
+  },
+  // Golang Image to Ascii app
+  {
+    id: 9,
+    name: "Golang Image to Ascii Cli App",
+    language: "Golang",
+    link: "https://github.com/Pythonwithsean/Atoi-Golang-Image-to-Ascii-Cli-App",
+    image: "https://i.stack.imgur.com/8UeR1.png"
+
+  },
+
 ];
 
 export default projectsData;
