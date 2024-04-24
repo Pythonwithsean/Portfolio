@@ -67,6 +67,13 @@ const projectsData = [
     image: "https://i.stack.imgur.com/8UeR1.png"
 
   },
+  // Binary Tree Java App
+  {
+    id: 10,
+    name: "Binary Tree Java App",
+    language: "Java",
+    link: "https://github.com/Pythonwithsean/Binary-Tree",
+    image: " https://favtutor.com/resources/images/uploads/Binary_Search_Tree.png"
 
 ];
 
