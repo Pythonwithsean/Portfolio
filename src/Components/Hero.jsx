@@ -21,11 +21,13 @@ function Hero() {
                   // Same substring at the start will only be typed once, initially
                   "Software Engineer",
                   2000,
-                  "1 year of Coding experience",
-                  2000,
                   "Always Learning",
                   2000,
-                  "First Year and Scholar Computer Science student",
+                  "First Year Scholar",
+                  2000,
+                  "Computer Scientist",
+                  2000,
+                  "1+ Years of Experience",
                   2000,
                 ]}
                 speed={75}
@@ -64,7 +66,17 @@ function Hero() {
                   width: "100%",
                   maxWidth: "50px",
                 }}
-                src="../../public/youtube.png"
+                src="/youtube.png"
+              />
+            </Link>
+            <Link to="https://www.linkedin.com/in/sean-idisi-6bb799262/">
+              <img
+                className="Link-img"
+                style={{
+                  width: "100%",
+                  maxWidth: "50px",
+                }}
+                src="/linkedin.png"
               />
             </Link>
           </Box>

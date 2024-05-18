@@ -127,6 +127,7 @@
    height:540px;
    position: relative;
    display:flex;
+   width: 100%;
    justify-content: center;
    align-items: center;
    flex-direction: column;
@@ -194,6 +195,7 @@
  .moving-text{
       font-size: 2rem;
       font-family: var(--fonts_2);
+      width: 100%;
       color:#ea9a97;
       text-align:center;
       animation-name: moving;
@@ -225,12 +227,13 @@
  
  
  .info_container{
-   width: fit-content;
+   width: 100%;
+   min-width: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     align-items:center;
-    position: relative;
     transition: 0.4ms;
     animation-name: Slideinright;
     animation-duration: 3s;
