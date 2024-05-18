@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 function Hero() {
@@ -11,20 +12,20 @@ function Hero() {
               Hi, I&apos;m <em>Sean.</em>
             </h2>
             <br />
-            <h3>I am a Back-End Developer</h3>
+            <h3>I am a Software Engineer</h3>
             <a href="https://github.com/Pythonwithsean">
               {/* Full stack web devloper, 1 year of Coding experience, Always Learning, Experienced with UI/UX Design  */}
               <br />
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed once, initially
-                  'Full stack web devloper',
+                  "Software Engineer",
                   2000,
-                  '1 year of Coding experience',
+                  "1 year of Coding experience",
                   2000,
-                  'Always Learning',
+                  "Always Learning",
                   2000,
-                  'Experienced with UI/UX Design',
+                  "First Year and Scholar Computer Science student",
                   2000,
                 ]}
                 speed={75}
@@ -37,12 +38,41 @@ function Hero() {
               <button>About Me</button>
             </Link>
           </div>
-          <div className="links-container"></div>
+          <Box
+            height={70}
+            my={4}
+            display="flex"
+            alignItems="center"
+            gap={4}
+            p={2}
+            sx={{ border: "" }}
+          >
+            <Link to="https://github.com/Pythonwithsean">
+              <img
+                className="Link-img"
+                style={{
+                  width: "100%",
+                  maxWidth: "50px",
+                }}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              />
+            </Link>
+            <Link to="https://www.youtube.com/channel/UCh5L0QwH27DuIfV73l4zEjA">
+              <img
+                className="Link-img"
+                style={{
+                  width: "100%",
+                  maxWidth: "50px",
+                }}
+                src="../../public/youtube.png"
+              />
+            </Link>
+          </Box>
         </div>
-        <div className="subhero">
+        {/* <div className="subhero">
           <img src="/assets/Sean3-3ad21aa2.jpg" alt="Pythonwithsean" />
-          {/* <img src="../../public/Sean3.jpg" alt="Pythonwithsean" /> */}
-        </div>
+          <img src="../../public/Sean3.jpg" alt="Pythonwithsean" /> 
+        </div>  */}
       </div>
     </>
   );

@@ -1,15 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* The CSS code you provided is styling the `body` element of a webpage. */
 body{
-    background-color:	#1e2124;
+    background-color:	#0a0b0b;
     display: flex;
     flex-direction: column;
     width:100%;
     max-width: 100%;
-    overflow: hidden;
+    font-family: 'General Sans', sans-serif;
  }
+
 
 
