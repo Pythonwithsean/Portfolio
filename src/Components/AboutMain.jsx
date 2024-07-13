@@ -13,7 +13,7 @@ function AboutMain() {
           Tech Stack
         </h2>
         <br />
-        <div className="Tech-Stack-Container">
+        <div className="Tech-Stack-Container flex-wrap">
           <img
             align="left"
             alt="Java"
@@ -80,7 +80,7 @@ function AboutMain() {
             alt="Python"
             width="50px"
             className="tech-stack-logo"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
           />
          <img
             align="left"
@@ -96,6 +96,99 @@ function AboutMain() {
             width="50px"
             className="tech-stack-logo"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+
+      <img
+            align="left"
+            alt="Jest"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" />
+
+      <img
+            align="left"
+            alt="GraphQL"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" />
+
+      <img
+            align="left"
+            alt="PostgreSQL"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+
+      <img
+            align="left"
+            alt="Next.js"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+
+      <img
+            align="left"
+            alt="AWS"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+
+      <img
+            align="left"
+            alt="Supabase"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" />
+
+
+      <img
+            align="left"
+            alt="Junit"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg" />
+
+
+      <img
+            align="left"
+            alt="Tailwind CSS"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+
+
+
+
+      <img
+            align="left"
+            alt="Bun"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bun/bun-original.svg" />
+
+
+
+      <img
+            align="left"
+            alt="Vite"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
+
+
+
+      <img
+            align="left"
+            alt="Node"
+            width="50px"
+            className="tech-stack-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+
+
+
+
+
+
+
 
 
 

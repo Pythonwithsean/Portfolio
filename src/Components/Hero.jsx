@@ -27,7 +27,7 @@ function Hero() {
                   2000,
                   "Computer Scientist",
                   2000,
-                  "1+ Years of Experience",
+                  "2+ Years of Experience",
                   2000,
                 ]}
                 speed={75}
@@ -55,6 +55,7 @@ function Hero() {
                 style={{
                   width: "100%",
                   maxWidth: "50px",
+                  backgroundColor:"white",
                 }}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
               />
