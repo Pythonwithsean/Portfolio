@@ -1,6 +1,6 @@
 /* The CSS code you provided is styling the `body` element of a webpage. */
 body{
-    background-color:	#0a0b0b;
+    background-color:	var(--Background);
     display: flex;
     flex-direction: column;
     width:100%;
