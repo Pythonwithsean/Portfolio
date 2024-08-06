@@ -15,8 +15,12 @@
  header {
     background-color:var(--header);
     max-width: 100%;
-    height:60px;
+    height: 60px;
     z-index: 999; 
+    display: flex; 
+    align-items: center;
+    border: 1px solid white;
+
  }
 
  body{
@@ -62,6 +66,7 @@
     width: 100%;
     display: flex;
     justify-content: end;
+    align-items: center;
     position: relative;
  }
  
@@ -77,8 +82,8 @@
     text-decoration: none;
     color:var(--Secondary);
     font-weight: 600;
-    position: relative;
     z-index: 500px;
+    position: relative;
     margin-right: 15px;
     padding:10px;
     transition: all 0.2s ease-in;
@@ -105,8 +110,7 @@
  }
  
  nav ul li a:hover::after,nav ul li a:active::after,nav ul li a:focus:after{
-    width:100%;
- 
+    width:100%; 
  }
 
 
