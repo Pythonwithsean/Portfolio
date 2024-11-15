@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import "../Styles/Home.css";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 export default function HomePage() {
   const Languages = lazy(() => import("../Components/Languages"));
@@ -8,14 +9,14 @@ export default function HomePage() {
       <div className="main">
         <header>
           <img
-            src="/public/images/preview.svg"
+            src="/images/preview.svg"
             alt="Coffee"
             className="CoffeeSvg"
           ></img>
         </header>
         <section className="Hero">
           <img
-            src="/public/images/AnimePFP.png"
+            src="/images/AnimePFP.png"
             alt="AnimeBackground"
             className="AnimeBackground"
           ></img>
@@ -53,25 +54,40 @@ export default function HomePage() {
             Working on the backend services and building interfaces for the
             company&apos;s product.
           </p>
-          <h3>Software Engineer @ HHCS | Present - Aug 2024</h3>
-          <p>
-            {" "}
-            Working on the backend services and building interfaces for the
-            company&apos;s product.
-          </p>
+        </section>
+        <section className="Projects">
+          <h2>Projects</h2>
+          <h3>Image to Ascii Generator</h3>
+          <p>Languages - Go</p>
+
+          <h3>Rest API in Go</h3>
+          <p>Languages - Go, Docker</p>
         </section>
       </div>
       <footer>
         <h2>Contact</h2>
         <div className="contact-container">
-          <a href="mailto:pythonwithsean@gmail.com">Email Me</a>
-        </div>
-        <h2>Connect</h2>
-        <div className="socials-container">
-          <a href="https://www.linkedin.com/in/sean-idisi-6bb799262/">
-            LinkedIn
+          <a href="mailto:pythonwithsean@gmail.com">
+            <Mail />
           </a>
-          <a href="https://github.com/Pythonwithsean">Github</a>
+          <a href="https://www.linkedin.com/in/sean-idisi-6bb799262/">
+            <Linkedin />
+          </a>
+          <a href="https://github.com/Pythonwithsean">
+            <Github />
+          </a>
+        </div>
+        <div>
+          <p
+            style={{
+              textAlign: "center",
+              color: "#5b2800",
+              fontSize: "1rem",
+              padding: "1rem",
+            }}
+          >
+            © 2024 Created by Sean
+          </p>
         </div>
       </footer>
     </div>

@@ -31,7 +31,8 @@ header {
 
 .Hero,
 .About,
-.Work-Experience {
+.Work-Experience,
+.Projects {
   display: flex;
   flex-direction: column;
   margin: 1rem auto;
@@ -140,18 +141,27 @@ header {
 
 .contact-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  width: 100%;
   align-items: center;
   gap: 1rem;
   margin: 1rem auto;
   padding: 1rem;
   max-width: 80vw;
-  border: 0.6px solid #d2b48c;
   opacity: 0.9;
   border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact-container a {
+  color: var(--primary-color);
+  font-size: 1.2em;
+  transition: scale 0.3s ease-in-out;
+  font-weight: 800;
+}
+
+.contact-container a:hover {
+  color: var(--light-color);
+  scale: 1.2;
 }
 
 .contact-container h1 {
@@ -160,11 +170,46 @@ header {
   text-align: center;
 }
 
-.socials-container {
-  display: flex;
-  justify-content: center;
+.socials-container a {
+  color: var(--primary-color);
+  font-size: 1.2em;
+  transition: scale 0.3s ease-in-out;
+  font-weight: 800;
+}
+
+.socials-container a:hover {
+  color: var(--secondary-color);
+  scale: 1.1;
+}
+
+.Projects {
   align-items: center;
-  gap: 1rem;
+  background-color: var(--bold-emphasis);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Projects h1 {
+  font-size: 2em;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.Projects h2 {
+  font-size: 1.5em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  color: var(--light-color);
+  text-decoration: underline;
+  font-style: italic;
+  text-align: center;
+}
+
+.Projects p {
+  font-size: 1.2em;
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--light-color);
+  margin-bottom: 1rem;
 }
 
 footer {
@@ -172,25 +217,26 @@ footer {
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: var(--light-color);
+  border-top: 0.3px solid var(--light-color);
   position: relative;
   bottom: 0;
   gap: 0.5rem;
+  margin-top: 1rem;
   padding: 1rem;
 }
 
 footer h2 {
-  font-size: 1.5em;
-  color: var(--bold-emphasis);
+  font-size: 1.8em;
+  color: var(--light-color);
   margin: auto;
 }
 
 footer p {
   font-size: 1.2em;
-  color: var(--bold-emphasis);
+  color: var(--light-color);
 }
 
 footer a {
-  color: var(--bold-emphasis);
+  color: var(--light-color);
   text-decoration: none;
 }
