@@ -221,8 +221,8 @@ footer {
   position: relative;
   bottom: 0;
   gap: 0.5rem;
-  margin-top: 1rem;
   padding: 1rem;
+  margin-top: 5em;
 }
 
 footer h2 {
