@@ -1,13 +1,79 @@
+import { lazy, Suspense } from "react";
 import "../Styles/Home.css";
-import Header from "../Components/Header";
-import Hero from "../Components/Hero";
 
-function Home() {
+export default function HomePage() {
+  const Languages = lazy(() => import("../Components/Languages"));
   return (
-    <>
-      <Header />
-      <Hero />
-    </>
+    <div>
+      <div className="main">
+        <header>
+          <img
+            src="/public/images/preview.svg"
+            alt="Coffee"
+            className="CoffeeSvg"
+          ></img>
+        </header>
+        <section className="Hero">
+          <img
+            src="/public/images/AnimePFP.png"
+            alt="AnimeBackground"
+            className="AnimeBackground"
+          ></img>
+          <h1>
+            Hi I&apos;m{" "}
+            <span
+              style={{
+                color: "#5b2800",
+              }}
+            >
+              Sean
+            </span>
+          </h1>
+          <h2>Software Engineer</h2>
+        </section>
+
+        <section className="About">
+          <h2>Technical Languages</h2>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Languages />
+          </Suspense>
+          <br />
+          <h2>About Me</h2>
+          <p>
+            A second-year scholar and self-taught software engineer with strong
+            skills in data structures, algorithms, and building interfaces and
+            backend services. Passionate about Golang, Tech.
+          </p>
+        </section>
+        <section className="Work-Experience">
+          <h2>Work Experience</h2>
+          <h3>Software Engineer @ Kamrah | Present - Aug 2024</h3>
+          <p>
+            {" "}
+            Working on the backend services and building interfaces for the
+            company&apos;s product.
+          </p>
+          <h3>Software Engineer @ HHCS | Present - Aug 2024</h3>
+          <p>
+            {" "}
+            Working on the backend services and building interfaces for the
+            company&apos;s product.
+          </p>
+        </section>
+      </div>
+      <footer>
+        <h2>Contact</h2>
+        <div className="contact-container">
+          <a href="mailto:pythonwithsean@gmail.com">Email Me</a>
+        </div>
+        <h2>Connect</h2>
+        <div className="socials-container">
+          <a href="https://www.linkedin.com/in/sean-idisi-6bb799262/">
+            LinkedIn
+          </a>
+          <a href="https://github.com/Pythonwithsean">Github</a>
+        </div>
+      </footer>
+    </div>
   );
 }
-export default Home;

@@ -1,13 +1,23 @@
-/* The CSS code you provided is styling the `body` element of a webpage. */
-body{
-    background-color:	var(--Background);
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    overflow: hidden;
-    max-width: 100%;
-    font-family: 'General Sans', sans-serif;
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  --text-color: #d2b48c;
+}
 
+body {
+  font-family: sans-serif;
+  background-color: #d2b48c;
+  background-color: #5b2800;
+  height: 100%;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
 
+body .main {
+  min-height: 100vh;
+}
