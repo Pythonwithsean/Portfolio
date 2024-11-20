@@ -124,16 +124,6 @@ export default function HomePage() {
               am now pursuing a degree in Computer Science to further my
               education and career in software engineering.
             </p>
-
-            <h2>My Love for Chess</h2>
-            <p>
-              Chess has been a significant part of my life since childhood. I
-              started playing chess at a young age and quickly fell in love with
-              the game. I have participated in various tournaments and
-              competitions, honing my skills and strategic thinking. Chess has
-              taught me patience, discipline, and critical thinking, which I
-              apply to my daily life and work as a software engineer.
-            </p>
           </section>
         </section>
       </div>
