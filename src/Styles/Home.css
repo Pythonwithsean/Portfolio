@@ -1,324 +1,71 @@
-:root {
-  --primary-color: #977961;
-  --secondary-color: #5b2800;
-  --tertiary-color: #fff;
-  --light-color: #d2b48c;
-  --header-color: #704214;
-  --text-color: #d2b48c;
-  --bold-emphasis: #5b2800;
-}
-
-header {
-  display: flex;
-  max-width: 80vw;
-  margin: 1rem auto;
-  border-bottom: 2px solid var(--light-color);
-  padding: 0.4rem;
-}
-
-.CoffeeSvg {
-  width: 100%;
-  max-width: 60px;
-  height: 100%;
-  display: block;
-  fill: #fff;
-  transition: scale 0.3s ease-in-out;
-}
-
-.CoffeeSvg:hover {
-  scale: 1.05;
-}
-
-.Hero,
-.About,
-.Work-Experience,
-.Projects,
-.Education,
-.LifeAndBlog {
+.dark-theme {
+  background-color: #0a0a0a;
+  color: #fff;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 1rem auto;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.hero h1 {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+
+.section p { 
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.skills-grid h2 { 
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skills-grid h3 { 
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section {
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.project-card {
+  background-color: #1a1a1a;
   padding: 1rem;
-  max-width: 80vw;
-  border: 0.6px solid #d2b48c;
-  opacity: 0.9;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 1rem 0;
 }
 
-.About {
-  background-color: var(--secondary-color);
-  color: var(--tertiary-color);
-  border: 0.6px solid var(--primary-color);
-}
-
-.AnimeBackground {
-  border-radius: 10px;
-  margin: auto;
-  width: 100%;
-  max-width: 800px;
-}
-
-.Hero h1 {
-  font-size: 2em;
-  margin-top: 1rem;
+.footer {
   text-align: center;
+  margin-top: 2rem;
 }
 
-.Hero h2 {
-  font-size: 1.5em;
-  margin-top: 0.2em;
-  text-align: center;
-  color: var(--primary-color);
-  text-decoration: underline;
-  font-style: italic;
-}
-
-.About h1 {
-  font-size: 2em;
-  margin-top: 1rem;
-  text-align: center;
-}
-.About h2 {
-  font-size: 1.5em;
-  margin-top: 0.2em;
-  margin-bottom: 0.4em;
-  text-align: center;
-  color: var(--light-color);
-  text-decoration: underline;
-}
-
-.Tech-Stack-Container {
+.contact-links {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.tech-stack-logo {
-  width: 100%;
-  max-width: 24px;
-  height: 50px;
-  transition: scale 0.3s ease-in-out;
+.contact-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: opacity 0.3s;
 }
 
-.About p {
-  font-size: 1.2em;
-  margin-top: 1rem;
-  text-align: center;
-  color: var(--light-color);
-}
-
-.Work-Experience {
-  align-items: center;
-  background-color: #fff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.Work-Experience h1 {
-  font-size: 2em;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.Work-Experience h2 {
-  font-size: 1.5em;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-  color: var(--primary-color);
-  text-decoration: underline;
-  font-style: italic;
-  text-align: center;
-}
-
-.Work-Experience p {
-  font-size: 1.2em;
-  margin-top: 1rem;
-  text-align: center;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem auto;
-  padding: 1rem;
-  max-width: 80vw;
-  opacity: 0.9;
-  border-radius: 10px;
-}
-
-.contact-container a {
-  color: var(--primary-color);
-  font-size: 1.2em;
-  transition: scale 0.3s ease-in-out;
-  font-weight: 800;
-}
-
-.contact-container a:hover {
-  color: var(--light-color);
-  scale: 1.2;
-}
-
-.contact-container h1 {
-  font-size: 2em;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.socials-container a {
-  color: var(--primary-color);
-  font-size: 1.2em;
-  transition: scale 0.3s ease-in-out;
-  font-weight: 800;
-}
-
-.socials-container a:hover {
-  color: var(--secondary-color);
-  scale: 1.1;
-}
-
-.Projects {
-  align-items: center;
-  background-color: var(--bold-emphasis);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.Projects h1 {
-  font-size: 2em;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.Projects h2 {
-  font-size: 1.5em;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-  color: var(--light-color);
-  text-decoration: underline;
-  font-style: italic;
-  text-align: center;
-}
-
-.Projects p {
-  font-size: 1.2em;
-  margin-top: 1rem;
-  text-align: center;
-  color: var(--light-color);
-  margin-bottom: 1rem;
-}
-
-.Education {
-  align-items: center;
-  background-color: #fff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.Education h1 {
-  font-size: 2em;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.Education h2 {
-  font-size: 1.5em;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-  color: var(--primary-color);
-  text-decoration: underline;
-  font-style: italic;
-  text-align: center;
-}
-
-.Education p {
-  font-size: 1.2em;
-  margin-top: 1rem;
-  text-align: center;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-footer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  border-top: 0.3px solid var(--light-color);
-  position: relative;
-  bottom: 0;
-  gap: 0.5rem;
-  padding: 1rem;
-  margin-top: 5em;
-}
-
-.LifeAndBlog {
-  align-items: center;
-  background-color: var(--primary-color);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.LifeAndBlog h1 {
-  font-size: 2em;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.LifeAndBlog h2 {
-  font-size: 1.5em;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-  color: var(--light-color);
-  text-decoration: underline;
-  font-style: italic;
-  text-align: center;
-}
-
-.LifeAndBlog p {
-  font-size: 1.2em;
-  margin-top: 1rem;
-  text-align: center;
-  color: var(--light-color);
-  margin-bottom: 1rem;
-}
-.LifeAndBlog section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 1rem auto;
-  align-items: center;
-  padding: 1rem;
-  max-width: 80vw;
-  border: 0.6px solid #d2b48c;
-  opacity: 0.9;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.LifeAndBlog img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 10px;
-}
-
-footer h2 {
-  font-size: 1.8em;
-  color: var(--light-color);
-  margin: auto;
-}
-
-footer p {
-  font-size: 1.2em;
-  color: var(--light-color);
-}
-
-footer a {
-  color: var(--light-color);
-  text-decoration: none;
+.contact-links a:hover {
+  opacity: 0.8;
 }

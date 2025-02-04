@@ -4,16 +4,10 @@
   box-sizing: border-box;
 }
 
-:root {
-  --text-color: #d2b48c;
-}
-
 body {
-  font-family: sans-serif;
-  background-color: #d2b48c;
-  background-color: #5b2800;
+  font-family: 'Hack', monospace;
+  background-color: #0a0a0a;
   height: 100%;
-  color: var(--text-color);
   display: flex;
   flex-direction: column;
 }
