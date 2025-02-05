@@ -23,11 +23,11 @@ export default function HomePage() {
         <div className="skills-grid">
           <div>
             <h3>Languages</h3>
-            <p>Python, C++, TypeScript, Java</p>
+            <p>Go, Python, JavaScript, TypeScript, Java, C++, SQL, HTML, CSS</p>
           </div>
           <div>
             <h3>Frameworks</h3>
-            <p>React, Express, Next.js, Gin, Docker</p>
+            <p> React, Express, Flask, Django, Spring Boot, Svelte, Gin, Echo, GraphQL & Apollo, Next.js, Redux, Jest, Cypress</p>
           </div>
         </div>
       </section>
